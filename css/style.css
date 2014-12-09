@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "oxygen";
+  src: url("../fonts/Oxygen-Regular.ttf");
+  src: url("../fonts/Oxygen-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "lato-bold";
+  src: url("../fonts/Lato-Bold.ttf");
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "lato-italic";
+  src: url("../fonts/Lato-Italic.ttf");
+  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.cf:after, header:after, footer:after, .cf:before, header:before, footer:before {
+  content: " ";
+  display: table;
+  overflow: hidden; }
+
+.cf:after, header:after, footer:after {
+  clear: both; }
+
+.cf, header, footer {
+  *zoom: 1; }
+
+body {
+  background: #151612;
+  color: #fff;
+  font: 100%/1.4 "oxygen", helvetica, sans-serif;
+  letter-spacing: 1.2;
+  margin: 0;
+  padding: 0; }
+
+h1, h2 {
+  font-family: "lato-bold", arial, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+blockquote:before, blockquote:after {
+  content: "\""; }
+
+blockquote {
+  font-family: "lato-italic", helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: none; }
+
+li:hover {
+  background: rgba(14, 37, 250, 0.7);
+  border: none;
+  box-shadow: none;
+  transform: scale(1.1);
+  transition: all .4s ease-out; }
+  li:hover blockquote {
+    display: block; }
+
+header {
+  border-bottom: 1px solid #2036D2;
+  box-shadow: 0 3px rgba(32, 54, 210, 0.6);
+  box-sizing: border-box; }
+  header h1 {
+    margin: 30px 25px;
+    font-size: 2rem; }
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.leaders {
+  width: 700px;
+  margin: 50px auto 50px auto; }
+  .leaders li {
+    overflow: hidden;
+    border: 1px solid #2036d2;
+    box-shadow: inset 0 -2px 3px #3047a5;
+    cursor: pointer; }
+    .leaders li h2 {
+      margin-left: 10px; }
+
+footer {
+  box-shadow: 0 -3px rgba(32, 54, 210, 0.6);
+  border-top: 1px solid #2036D2; }
+  footer p {
+    margin-top: 20px; }
+
+a {
+  color: #283075;
+  text-decoration: none; }
